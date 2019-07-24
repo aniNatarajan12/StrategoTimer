@@ -15,10 +15,12 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var redBufferLabel: UILabel!
     @IBOutlet weak var turnButton: UIButton!
     @IBOutlet weak var turnLabel: UILabel!
+    @IBOutlet var resumeButton: UIButton!
     
     @IBOutlet var backgroundView: UIView!
     @IBOutlet var contentView: UIView!
     @IBOutlet var winLabel: UILabel!
+    @IBOutlet var detailsLabel: UILabel!
     @IBOutlet var backButton: UIButton!
     
     var blueBufferTime = 0
@@ -26,6 +28,8 @@ class TimerViewController: UIViewController {
     var turnTime = 0
     var timer = Timer()
     var buttonState = 0
+    var moves = 0
+    var startTime = Date.init()
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -57,15 +61,18 @@ class TimerViewController: UIViewController {
         backgroundView.isHidden = true
         backButton.layer.cornerRadius = 20
         backButton.clipsToBounds = true
+        resumeButton.isHidden = true
     }
     
     @IBAction func turnButtonPressed(_ sender: Any) {
         if buttonState == 0 {
             buttonState = 1
+            startTime = Date.init()
             turnLabel.text = "\(totalTurnTime)"
             turnTime = totalTurnTime
             timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
         } else if buttonState == 1 {
+            moves += 1
             timer.invalidate()
             turnLabel.text = "\(totalTurnTime)"
             turnTime = totalTurnTime
@@ -93,17 +100,37 @@ class TimerViewController: UIViewController {
                 redBufferTime -= 1
                 redBufferLabel.text = showTimeFromSeconds(time: redBufferTime)
                 if redBufferTime <= 0 {
-                    timer.invalidate()
-                    showPopup(redWin: false)
                     buttonState = 2
+                    timer.invalidate()
+                    
+                    contentView.backgroundColor = blueTeamView.backgroundColor?.withAlphaComponent(1)
+                    winLabel.textColor = blueBufferLabel.textColor
+                    winLabel.text = "Blue Team Wins!"
+                    detailsLabel.textColor = blueBufferLabel.textColor
+                    backButton.titleLabel?.textColor = blueBufferLabel.textColor
+                    winLabel.transform = CGAffineTransform(rotationAngle: .pi)
+                    backButton.transform = CGAffineTransform(rotationAngle: .pi)
+                    detailsLabel.transform = CGAffineTransform(rotationAngle: .pi)
+                    
+                    showPopup()
                 }
             } else {
                 blueBufferTime -= 1
                 blueBufferLabel.text = showTimeFromSeconds(time: blueBufferTime)
                 if blueBufferTime <= 0 {
-                    timer.invalidate()
-                    showPopup(redWin: true)
                     buttonState = 2
+                    timer.invalidate()
+                    
+                    contentView.backgroundColor = redTeamView.backgroundColor?.withAlphaComponent(1)
+                    winLabel.textColor = redBufferLabel.textColor
+                    winLabel.text = "Red Team Wins!"
+                    detailsLabel.textColor = redBufferLabel.textColor
+                    backButton.titleLabel?.textColor = redBufferLabel.textColor
+                    winLabel.transform = CGAffineTransform(rotationAngle: 0)
+                    backButton.transform = CGAffineTransform(rotationAngle: 0)
+                    detailsLabel.transform = CGAffineTransform(rotationAngle: 0)
+                    
+                    showPopup()
                 }
             }
         } else {
@@ -124,7 +151,36 @@ class TimerViewController: UIViewController {
         dismissPopup()
     }
     
-    func showPopup(redWin: Bool) {
+    @IBAction func gameOverPressed(_ sender: Any) {
+        buttonState = 2
+        timer.invalidate()
+        
+        contentView.backgroundColor = .lightGray
+        winLabel.textColor = .white
+        winLabel.text = "Game Over!"
+        detailsLabel.textColor = .white
+        backButton.titleLabel?.textColor = .lightGray
+        
+        showPopup()
+    }
+    
+    @IBAction func pausePressed(_ sender: Any) {
+        if buttonState == 1 {
+            timer.invalidate()
+            backgroundView.isHidden = false
+            self.backgroundView.alpha = 0.8
+            resumeButton.isHidden = false
+        }
+    }
+    
+    @IBAction func resumePressed(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
+        
+        backgroundView.isHidden = true
+        resumeButton.isHidden = true
+    }
+    
+    func showPopup() {
         // animate bringing up the popup
         
         backgroundView.alpha = 0
@@ -132,22 +188,7 @@ class TimerViewController: UIViewController {
         
         backgroundView.isHidden = false
         contentView.isHidden = false
-        
-        if redWin {
-            contentView.backgroundColor = redTeamView.backgroundColor?.withAlphaComponent(1)
-            winLabel.textColor = redBufferLabel.textColor
-            winLabel.text = "Red Team Wins!"
-            backButton.titleLabel?.textColor = redBufferLabel.textColor
-            winLabel.transform = CGAffineTransform(rotationAngle: 0)
-            backButton.transform = CGAffineTransform(rotationAngle: 0)
-        } else {
-            contentView.backgroundColor = blueTeamView.backgroundColor?.withAlphaComponent(1)
-            winLabel.textColor = blueBufferLabel.textColor
-            winLabel.text = "Blue Team Wins!"
-            backButton.titleLabel?.textColor = blueBufferLabel.textColor
-            winLabel.transform = CGAffineTransform(rotationAngle: .pi)
-            backButton.transform = CGAffineTransform(rotationAngle: .pi)
-        }
+        detailsLabel.text = "This game took \(moves) moves and \(Date.init().minutes(from: startTime)) minutes."
         
         UIView.animate(withDuration: 0.5, animations: {
             self.backgroundView.alpha = 0.66
@@ -176,5 +217,11 @@ class TimerViewController: UIViewController {
         })
     }
 
+}
+
+extension Date {
+    func minutes(from date: Date) -> Int {
+        return Calendar.current.dateComponents([.minute], from: date, to: self).minute ?? 0
+    }
 }
 
