@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		779B734E22E7E57F00DD2055 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B734D22E7E57F00DD2055 /* HomeViewController.swift */; };
+		779B735022E7E58B00DD2055 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B734F22E7E58B00DD2055 /* SettingsViewController.swift */; };
+		77ED171A22E7BEA4003AD6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED171922E7BEA4003AD6AA /* AppDelegate.swift */; };
+		77ED171C22E7BEA4003AD6AA /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED171B22E7BEA4003AD6AA /* TimerViewController.swift */; };
+		77ED171F22E7BEA4003AD6AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77ED171D22E7BEA4003AD6AA /* Main.storyboard */; };
+		77ED172122E7BEA6003AD6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77ED172022E7BEA6003AD6AA /* Assets.xcassets */; };
+		77ED172422E7BEA6003AD6AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77ED172222E7BEA6003AD6AA /* LaunchScreen.storyboard */; };
+		77ED172F22E7BEA6003AD6AA /* Stratego_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED172E22E7BEA6003AD6AA /* Stratego_TimerTests.swift */; };
+		77ED173A22E7BEA6003AD6AA /* Stratego_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED173922E7BEA6003AD6AA /* Stratego_TimerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77ED172B22E7BEA6003AD6AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77ED170E22E7BEA4003AD6AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77ED171522E7BEA4003AD6AA;
+			remoteInfo = "Stratego Timer";
+		};
+		77ED173622E7BEA6003AD6AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77ED170E22E7BEA4003AD6AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77ED171522E7BEA4003AD6AA;
+			remoteInfo = "Stratego Timer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		779B734D22E7E57F00DD2055 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		779B734F22E7E58B00DD2055 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		77ED171622E7BEA4003AD6AA /* Stratego Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stratego Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77ED171922E7BEA4003AD6AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77ED171B22E7BEA4003AD6AA /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		77ED171E22E7BEA4003AD6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77ED172022E7BEA6003AD6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77ED172322E7BEA6003AD6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77ED172522E7BEA6003AD6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77ED172A22E7BEA6003AD6AA /* Stratego TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stratego TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77ED172E22E7BEA6003AD6AA /* Stratego_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stratego_TimerTests.swift; sourceTree = "<group>"; };
+		77ED173022E7BEA6003AD6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77ED173522E7BEA6003AD6AA /* Stratego TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stratego TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77ED173922E7BEA6003AD6AA /* Stratego_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stratego_TimerUITests.swift; sourceTree = "<group>"; };
+		77ED173B22E7BEA6003AD6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77ED171322E7BEA4003AD6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77ED172722E7BEA6003AD6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77ED173222E7BEA6003AD6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77ED170D22E7BEA4003AD6AA = {
+			isa = PBXGroup;
+			children = (
+				77ED171822E7BEA4003AD6AA /* Stratego Timer */,
+				77ED172D22E7BEA6003AD6AA /* Stratego TimerTests */,
+				77ED173822E7BEA6003AD6AA /* Stratego TimerUITests */,
+				77ED171722E7BEA4003AD6AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77ED171722E7BEA4003AD6AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77ED171622E7BEA4003AD6AA /* Stratego Timer.app */,
+				77ED172A22E7BEA6003AD6AA /* Stratego TimerTests.xctest */,
+				77ED173522E7BEA6003AD6AA /* Stratego TimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77ED171822E7BEA4003AD6AA /* Stratego Timer */ = {
+			isa = PBXGroup;
+			children = (
+				77ED171922E7BEA4003AD6AA /* AppDelegate.swift */,
+				779B734D22E7E57F00DD2055 /* HomeViewController.swift */,
+				779B734F22E7E58B00DD2055 /* SettingsViewController.swift */,
+				77ED171B22E7BEA4003AD6AA /* TimerViewController.swift */,
+				77ED171D22E7BEA4003AD6AA /* Main.storyboard */,
+				77ED172022E7BEA6003AD6AA /* Assets.xcassets */,
+				77ED172222E7BEA6003AD6AA /* LaunchScreen.storyboard */,
+				77ED172522E7BEA6003AD6AA /* Info.plist */,
+			);
+			path = "Stratego Timer";
+			sourceTree = "<group>";
+		};
+		77ED172D22E7BEA6003AD6AA /* Stratego TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				77ED172E22E7BEA6003AD6AA /* Stratego_TimerTests.swift */,
+				77ED173022E7BEA6003AD6AA /* Info.plist */,
+			);
+			path = "Stratego TimerTests";
+			sourceTree = "<group>";
+		};
+		77ED173822E7BEA6003AD6AA /* Stratego TimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77ED173922E7BEA6003AD6AA /* Stratego_TimerUITests.swift */,
+				77ED173B22E7BEA6003AD6AA /* Info.plist */,
+			);
+			path = "Stratego TimerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77ED171522E7BEA4003AD6AA /* Stratego Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77ED173E22E7BEA6003AD6AA /* Build configuration list for PBXNativeTarget "Stratego Timer" */;
+			buildPhases = (
+				77ED171222E7BEA4003AD6AA /* Sources */,
+				77ED171322E7BEA4003AD6AA /* Frameworks */,
+				77ED171422E7BEA4003AD6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stratego Timer";
+			productName = "Stratego Timer";
+			productReference = 77ED171622E7BEA4003AD6AA /* Stratego Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77ED172922E7BEA6003AD6AA /* Stratego TimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77ED174122E7BEA6003AD6AA /* Build configuration list for PBXNativeTarget "Stratego TimerTests" */;
+			buildPhases = (
+				77ED172622E7BEA6003AD6AA /* Sources */,
+				77ED172722E7BEA6003AD6AA /* Frameworks */,
+				77ED172822E7BEA6003AD6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77ED172C22E7BEA6003AD6AA /* PBXTargetDependency */,
+			);
+			name = "Stratego TimerTests";
+			productName = "Stratego TimerTests";
+			productReference = 77ED172A22E7BEA6003AD6AA /* Stratego TimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77ED173422E7BEA6003AD6AA /* Stratego TimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77ED174422E7BEA6003AD6AA /* Build configuration list for PBXNativeTarget "Stratego TimerUITests" */;
+			buildPhases = (
+				77ED173122E7BEA6003AD6AA /* Sources */,
+				77ED173222E7BEA6003AD6AA /* Frameworks */,
+				77ED173322E7BEA6003AD6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77ED173722E7BEA6003AD6AA /* PBXTargetDependency */,
+			);
+			name = "Stratego TimerUITests";
+			productName = "Stratego TimerUITests";
+			productReference = 77ED173522E7BEA6003AD6AA /* Stratego TimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77ED170E22E7BEA4003AD6AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Anirudh Natarajan";
+				TargetAttributes = {
+					77ED171522E7BEA4003AD6AA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					77ED172922E7BEA6003AD6AA = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 77ED171522E7BEA4003AD6AA;
+					};
+					77ED173422E7BEA6003AD6AA = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 77ED171522E7BEA4003AD6AA;
+					};
+				};
+			};
+			buildConfigurationList = 77ED171122E7BEA4003AD6AA /* Build configuration list for PBXProject "Stratego Timer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77ED170D22E7BEA4003AD6AA;
+			productRefGroup = 77ED171722E7BEA4003AD6AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77ED171522E7BEA4003AD6AA /* Stratego Timer */,
+				77ED172922E7BEA6003AD6AA /* Stratego TimerTests */,
+				77ED173422E7BEA6003AD6AA /* Stratego TimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77ED171422E7BEA4003AD6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77ED172422E7BEA6003AD6AA /* LaunchScreen.storyboard in Resources */,
+				77ED172122E7BEA6003AD6AA /* Assets.xcassets in Resources */,
+				77ED171F22E7BEA4003AD6AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77ED172822E7BEA6003AD6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77ED173322E7BEA6003AD6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77ED171222E7BEA4003AD6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77ED171C22E7BEA4003AD6AA /* TimerViewController.swift in Sources */,
+				77ED171A22E7BEA4003AD6AA /* AppDelegate.swift in Sources */,
+				779B734E22E7E57F00DD2055 /* HomeViewController.swift in Sources */,
+				779B735022E7E58B00DD2055 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77ED172622E7BEA6003AD6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77ED172F22E7BEA6003AD6AA /* Stratego_TimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77ED173122E7BEA6003AD6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77ED173A22E7BEA6003AD6AA /* Stratego_TimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77ED172C22E7BEA6003AD6AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77ED171522E7BEA4003AD6AA /* Stratego Timer */;
+			targetProxy = 77ED172B22E7BEA6003AD6AA /* PBXContainerItemProxy */;
+		};
+		77ED173722E7BEA6003AD6AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77ED171522E7BEA4003AD6AA /* Stratego Timer */;
+			targetProxy = 77ED173622E7BEA6003AD6AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77ED171D22E7BEA4003AD6AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77ED171E22E7BEA4003AD6AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77ED172222E7BEA6003AD6AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77ED172322E7BEA6003AD6AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77ED173C22E7BEA6003AD6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77ED173D22E7BEA6003AD6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77ED173F22E7BEA6003AD6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SZJU7B23S;
+				INFOPLIST_FILE = "Stratego Timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anirudh.StrategoTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77ED174022E7BEA6003AD6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SZJU7B23S;
+				INFOPLIST_FILE = "Stratego Timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anirudh.StrategoTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77ED174222E7BEA6003AD6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SZJU7B23S;
+				INFOPLIST_FILE = "Stratego TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Anirudh.Stratego-TimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stratego Timer.app/Stratego Timer";
+			};
+			name = Debug;
+		};
+		77ED174322E7BEA6003AD6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SZJU7B23S;
+				INFOPLIST_FILE = "Stratego TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Anirudh.Stratego-TimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stratego Timer.app/Stratego Timer";
+			};
+			name = Release;
+		};
+		77ED174522E7BEA6003AD6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SZJU7B23S;
+				INFOPLIST_FILE = "Stratego TimerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Anirudh.Stratego-TimerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stratego Timer";
+			};
+			name = Debug;
+		};
+		77ED174622E7BEA6003AD6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SZJU7B23S;
+				INFOPLIST_FILE = "Stratego TimerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Anirudh.Stratego-TimerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stratego Timer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77ED171122E7BEA4003AD6AA /* Build configuration list for PBXProject "Stratego Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77ED173C22E7BEA6003AD6AA /* Debug */,
+				77ED173D22E7BEA6003AD6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77ED173E22E7BEA6003AD6AA /* Build configuration list for PBXNativeTarget "Stratego Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77ED173F22E7BEA6003AD6AA /* Debug */,
+				77ED174022E7BEA6003AD6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77ED174122E7BEA6003AD6AA /* Build configuration list for PBXNativeTarget "Stratego TimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77ED174222E7BEA6003AD6AA /* Debug */,
+				77ED174322E7BEA6003AD6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77ED174422E7BEA6003AD6AA /* Build configuration list for PBXNativeTarget "Stratego TimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77ED174522E7BEA6003AD6AA /* Debug */,
+				77ED174622E7BEA6003AD6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77ED170E22E7BEA4003AD6AA /* Project object */;
+}
